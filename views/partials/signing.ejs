@@ -1,0 +1,49 @@
+<div id="overlay">
+    <div id="overlay_background"></div>
+    <div id="overlay_signup" class="overlay-content">
+        <span id="signup_overlay_close_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28"
+                viewBox="0 0 24 24" style=" fill:#ffffff;">
+                <path
+                    d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z">
+                </path>
+            </svg>
+        </span>
+        <h2>Sign Up</h2>
+        <div class="alert-success" id="signup_success">
+            <p>SignUp Successful</p>
+        </div>
+        <div class="alert-failed" id="signup_failed">
+            <p>SignUp Failed, User Already Exists</p>
+        </div>
+        <form id="signup_form">
+            <input type="text" id="signup_name" min="1" placeholder="Name" required>
+            <input type="mail" id="signup_mail" placeholder="Email" required>
+            <input type="password" id="signup_pass" min="6" placeholder="Password" required>
+            <input type="text" id="signup_username" min="1" placeholder="Username" required>
+            <input type="tel" id="signup_mobile" min="10" placeholder="Mobile Number" required>
+            <input type="text" id="signup_description" placeholder="Description">
+            <button type="submit" class="btn">SignUp</button>
+        </form>
+    </div>
+    <div id="overlay_login" class="overlay-content">
+        <span id="login_overlay_close_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28"
+                viewBox="0 0 24 24" style=" fill:#ffffff;">
+                <path
+                    d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z">
+                </path>
+            </svg>
+        </span>
+        <h2>SIGN IN</h2>
+        <h3>Welcome! Log into your account</h3>
+        <div class="alert-failed" id="login_failed">
+            <p>Login Failed, Invalid login creadentials</p>
+        </div>
+        <form id="login_form">
+            <input type="text" id="login_username" min="1" placeholder="Your Username" required>
+            <input type="password" id="login_pass" placeholder="Your Password" required>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</div>

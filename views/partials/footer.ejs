@@ -1,0 +1,70 @@
+<% function getFormattedDate(d) { %>
+    <%    let date = new Date(d); %>
+    <%    let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; %>
+    <%    return `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`; %>
+    <% } %>
+
+<div class="footer">
+    <div class="footerA">
+        <div class="heading">EDITOR PICKS</div>
+
+        <% for (let i = 0 ; i < 3  ; i++) {%>
+            <div class="rohit">
+                <img class="imgrum"
+                    src="<%= digitalGames[i].urlToImage %>">
+                <div class="news"><%= digitalGames[i].title %>
+                    <div class="date"><%= getFormattedDate(digitalGames[i].publishedAt) %></div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+    
+    <div class="footerB">
+        <div class="heading">POPULAR POSTS</div>
+            <% for (let i = 0 ; i < 3  ; i++) {%>
+                <div class="rohit">
+                    <img class="imgrum"
+                        src="<%= latestPosts[i].urlToImage %>">
+                    <div class="news"><%= latestPosts[i].title %>
+                        <div class="date"><%= getFormattedDate(latestPosts[i].publishedAt) %></div>
+                    </div>
+                </div>
+            <% } %>
+    </div>
+
+    <div class="footerC">
+        <div class="heading">POPULAR CATEGORY</div>
+        <div class="total1">
+            <div>Cricket</div>
+            <div>1055</div>
+        </div>
+        <div class="total">
+            <div>Fantasy</div>
+            <div>83</div>
+        </div>
+        <div class="total">
+            <div>Fantasy Prediction</div>
+            <div>616</div>
+        </div>
+        <div class="total">
+            <div>Top Blogs</div>
+            <div>279</div>
+        </div>
+        <div class="total">
+            <div>News</div>
+            <div>249</div>
+        </div>
+        <div class="total">
+            <div>Games</div>
+            <div>212</div>
+        </div>
+        <div class="total">
+            <div>Card Games</div>
+            <div>150</div>
+        </div>
+        <div class="total">
+            <div>Football</div>
+            <div>116</div>
+        </div>
+    </div>
+</div>

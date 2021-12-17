@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/nav_blog.css" type='text/css'>
+  <link rel="stylesheet" href="/css/signing.css" type='text/css'>
+  <link rel="stylesheet" href="/css/article_post.css" type='text/css'>
+
+  <title>Article Post</title>
+</head>
+
+<body>
+
+  <%- include('partials/navbar') %>
+  <%- include('partials/signing') %>
+
+  <div class='container'>
+
+    <form action="http://localhost:3000/articles" method="POST" enctype="multipart/form-data" class='form' id="postForm">
+      <div>
+        <label for="urlToImage">Image:</label>
+        <input type="file" name="urlToImage">
+      </div>
+      <div>
+        <label for="title">Title:</label>
+        <input type="text" name="title">
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <input type="text" name="description">
+      </div>
+      <div>
+        <label for="content">Content:</label>
+        <input type="text" name="content">
+      </div>
+      <div>
+        <label for="publishedAt">PublishedAt:</label>
+        <input type="date" name="publishedAt">
+      </div>
+      <div>
+        <label for="category">Category:</label>
+        <input type="text" name="category">
+      </div>
+      <div>
+        <label for="category">Category:</label>
+        <input type="text" name="category">
+      </div>
+      <div>
+        <label for="category">Category:</label>
+        <input type="text" name="category">
+      </div>
+      <div>
+        <label for="category">Category:</label>
+        <input type="text" name="category">
+      </div>
+      <input type='submit'>
+    </form>
+
+  </div>
+
+</body>
+
+</html>
