@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Premier League(MPL)</title>
+    <link rel="stylesheet" href="/css/esport.css">
+    <link rel="icon" href="https://www.mpl.live/static/MPL_Logo_2.png" type="png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    </link>
+    <link href="//db.onlinewebfonts.com/c/64066084d97b188b68757ef02ab5faa5?family=Trim+Web+Regular" rel="stylesheet" type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/675a557703d8579401fcf6a3f9937663?family=Trim+Web+Medium" rel="stylesheet" type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/93942a49cb4892f168e67b0ad3159985?family=TrimWebThin" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/">
+                    <img id="logo1" src="https://www.mpl.live/static/hamburger/mpl-logo.png" alt="">
+                </a>
+            </div>
+            <div class="sub-nav">
+                <div class="dropdown nav-btn">
+                    <div class="game">MPL Game</div>
+                    <div class="img img-add"></div>
+                </div>
+                <div class="mpl-es nav-btn">
+                    <a class="emrgcy" href="/esport">MPL Esports</a>
+                </div>
+                <div class="nav-about nav-btn">
+                    <a class="emrgcy" href="/about">About</a>
+                </div>
+                <div class="nav-blog nav-btn">
+                    <a class="emrgcy" href="/blog">Blog</a>
+                </div>
+                <div class="nav-faq nav-btn">
+                    <a class="emrgcy" href="/faq">FAQs</a>
+                </div>
+                <div class="nav-help nav-btn">
+                    <a href="/help">
+                        <img src="https://www.mpl.live/static/hamburger/help_icon.png" alt="">
+                        <span id="hlp">Help</span>
+                    </a>
+                </div>
+            </div>
+            <div id="hambr" class="hambr-add-icon">
+                <!-- <img id="hambr-img" src="/icons/menu.png" alt=""> -->
+            </div>
+            <div class="mobile-con mobile-con-hidden">
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/fantasy_helmet.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Fantasy</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop1" class="minus-container mov-hidden">
+                        <a href="/dropdown/fantasy_cricket">
+                            <img class="minus-con-img" src="/icons/mobile_11.png" alt="">
+                            <p class="minus-con-text">Fantasy Cricket</p>
+                        </a>
+                        <a href="/dropdown/football">
+                            <img class="minus-con-img" src="/icons/fantasy-cricket12.png" alt="">
+                            <p class="minus-con-text">Fantasy football</p>
+                        </a>
+                        <a href="/dropdown/basketball">
+                            <img class="minus-con-img" src="/icons/fantasy-basketball13.png" alt="">
+                            <p class="minus-con-text">Fantasy Backetball</p>
+                        </a>
+                        <a href="#">
+                            <img class="minus-con-img" src="/icons/fantasy_icon14.png" alt="">
+                            <p class="minus-con-text">Fantasy Games</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/card-skill.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Card Skill</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn2" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop2" class="minus-container mov-hidden">
+                        <a href="/dropdown/rummy">
+                            <img class="minus-con-img" src="/icons/game_icon_21.png" alt="">
+                            <p class="minus-con-text">Rummy</p>
+                        </a>
+                        <a href="/dropdown/Poker">
+                            <img class="minus-con-img" src="/icons/game_icon_22.png" alt="">
+                            <p class="minus-con-text">Poker</p>
+                        </a>
+                        <a href="/dropdown/call break">
+                            <img class="minus-con-img" src="/icons/game_icon_23.png" alt="">
+                            <p class="minus-con-text">Call Break</p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/sport_games.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Sports Games</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn3" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop3" class="minus-container mov-hidden">
+                        <a href="/dropdown/wcc2">
+                            <img class="minus-con-img" src="/icons/game_icon_31.png" alt="">
+                            <p class="minus-con-text">Wcc2</p>
+                        </a>
+                        <a href="/dropdown/baseballstars-game">
+                            <img class="minus-con-img" src="/icons/baseball_games_32.png" alt="">
+                            <p class="minus-con-text">Baseball Star Game</p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/arcade_games.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Arcade Games</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn4" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop4" class="minus-container mov-hidden">
+                        <a href="/dropdown/FRUIT DART-game">
+                            <img class="minus-con-img" src="/icons/game_icon_41.png" alt="">
+                            <p class="minus-con-text">Fruit Dart</p>
+                        </a>
+                        <a href="/dropdown/FRUIT CHOP">
+                            <img class="minus-con-img" src="/icons/game_icon_42.png" alt="">
+                            <p class="minus-con-text">Fruit Chop</p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/casual_games.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Casual Games</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn5" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop5" class="minus-container mov-hidden">
+                        <a href="/dropdown/Carrom">
+                            <img class="minus-con-img" src="/icons/game_icon_51.png" alt="">
+                            <p class="minus-con-text">Carrom</p>
+                        </a>
+                        <a href="/dropdown/pool-game">
+                            <img class="minus-con-img" src="/icons/game_icon_52.png" alt="">
+                            <p class="minus-con-text">Pool</p>
+                        </a>
+                        <a href="/dropdown/Ludo">
+                            <img class="minus-con-img" src="/icons/game_icon_53.png" alt="">
+                            <p class="minus-con-text">Ludo</p>
+                        </a>
+                        <a href="/dropdown/RUNNER NO.1">
+                            <img class="minus-con-img" src="/icons/game_icon_54.png" alt="">
+                            <p class="minus-con-text">Runner No. 1</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/puzzle_games.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Puzzle Games</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn6" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop6" class="minus-container mov-hidden">
+                        <a href="/dropdown/bubble-shooter">
+                            <img class="minus-con-img" src="/icons/game_icon_61.png" alt="">
+                            <p class="minus-con-text">Bubble</p>
+                        </a>
+                        <a href="/dropdown/build-up-game">
+                            <img class="minus-con-img" src="/icons/game_icon_62.png" alt="">
+                            <p class="minus-con-text">Build Up</p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/fantasy_games_icon.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">MPL Esports</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/fantasy_games_icon.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">MPL Esports</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/about-us.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">About Us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/blog.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Blog</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/contact-us.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">FAQ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/help.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Help</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="drop-con hidden">
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/fantasy_games_icon.png" alt="">
+                    <h4 class="nav-h4">Fantasy Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/fantasy_cricket">
+                        <p>Fantasy Cricket</p>
+                    </a>
+                    <a href="/dropdown/football">
+                        <p>Fantasy football</p>
+                    </a>
+                    <a href="/dropdown/basketball">
+                        <p>Fantasy basketball</p>
+                    </a>
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/sports_games_icon.png" alt="">
+                    <h4 class="nav-h4">Sports Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/wcc2">
+                        <p>Wcc2</p>
+                    </a>
+                    <a href="/dropdown/baseballstars-game">
+                        <p>Baseball Star Game</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/arcade_games_desktop.png" alt="">
+                    <h4 class="nav-h4">Arcade Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/FRUIT CHOP">
+                        <p>Fruit Chop</p>
+                    </a>
+                    <a href="/dropdown/FRUIT DART-game">
+                        <p>Fruit Dart</p>
+                    </a>
+                    <a href="/dropdown/FRUIT SLICE">
+                        <p>Fruit Slice</p>
+                    </a>
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/puzzle_games_desktop.png" alt="">
+                    <h4 class="nav-h4">Puzzle Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/bubble-shooter">
+                        <p>Bubble Shooter</p>
+                    </a>
+                    <a href="/dropdown/build-up-game">
+                        <p>Build up</p>
+                    </a>
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/card_games_desktop.png" alt="">
+                    <h4 class="nav-h4">Card Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/rummy">
+                        <p>Rummy</p>
+                    </a>
+                    <a href="/dropdown/Poker">
+                        <p>Poker</p>
+                    </a>
+                    <a href="/dropdown/call break">
+                        <p>Call Break</p>
+                    </a>
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/casual_games_desktop.png" alt="">
+                    <h4 class="nav-h4">Casual Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/Carrom">
+                        <p>Carrom</p>
+                    </a>
+                    <a href="/dropdown/pool-game">
+                        <p>Pool</p>
+                    </a>
+                    <a href="/dropdown/Ludo">
+                        <p>Ludo</p>
+                    </a>
+                    <a href="/dropdown/RUNNER NO.1">
+                        <p>Runner No. 1</p>
+                    </a>
+                    <a href="/dropdown/MONSTER TRUCK-game">
+                        <p>Monster Truck</p>
+                    </a>
+                    <a href="#">
+                        <p>Go Ride</p>
+                    </a>
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/brain_games_desktop.png" alt="">
+                    <h4 class="nav-h4">Brain Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/sudoku">
+                        <p>Sudoku</p>
+                    </a>
+                    <a href="/dropdown/chess">
+                        <p>Speed Chess</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="div1">
+        <div class="sub-div">
+            <p>Play Esports Tournaments On MPL App & Win Huge Cash Prizes!</p>
+            <label id="lbl">+91</label>
+            <input type="text" placeholder="Enter mobile number">
+            <button>Get SMS with download link</button>
+        </div>
+    </div>
+
+
+
+    <div id="section">
+        <div class="sub-sec">
+            <div id="news-feed">
+                <h1 class="nf">News Feed</h1>
+                <p>Latest updates about all the MPL Esports events</p>
+                <div id="nf-in">
+                    <div>
+                        <img src="https://www.mpl.live/cledge.mpl.live/pb/website/static/31a20498701d4db189d3ef974818873e.png">
+                    </div>
+                    <div class="nf-d1">
+                        <h4>MPL Esports Daily Series Weekend Summit Live Every Saturday!</h4>
+                        <p>OCT 7, 2021 1 MONTHS AGO</p>
+                    </div>
+                </div>
+
+                <div id="nf-in">
+                    <div>
+                        <img src=https://www.mpl.live/cledge.mpl.live/pb/website/static/2b176e79955c4539bc2319357d167981.png>
+                    </div>
+                    <div class="nf-d1">
+                        <h4>Weekly Esports Daily Series Started From 6th September! Know More</h4>
+                        <p>SEP 7, 2021 2 MONTHS AGO</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="eventc">
+                <h1>Event Calendar</h1>
+                <h3>Live Events</h3>
+                <div id="event-in">
+                    <img src="https://www.mpl.live/cledge.mpl.live/pb/website/static/969d65cbbe3f4ef19abaa32a660745c6.webp">
+                </div>
+            </div>
+
+            <div id="live-stream">
+                <h1>Live Stream</h1>
+                <p>Semi-Finals & Finals Of Tournaments In Each Game Will Be Live-Streamed On Youtube & Facebook.</p>
+                <img src="https://www.mpl.live/cledge.mpl.live/pb/website/static/e1a116ea90b444af9c14c7dad9acac5d.png">
+
+                <div class="live-stream-div">
+                    <div><img src="https://www.mpl.live/cledge.mpl.live/pb/website/static/bda28c955fd54144897d03f868733601.png">
+                    </div>
+                    <div>
+                        <h2>Pool Champs<sup style="font-size: 8px;">TM</sup></h2>
+                    </div>
+                    <div>
+                        <h3>Every Saturday</h3>
+                    </div>
+                </div>
+
+                <div id="youtube-logo">
+                    <a href="https://www.youtube.com/channel/UCNR5MSu03GUNBmfXrmLIBXg">
+                        <div class="d1">
+                            <div>
+                                <img src="https://www.mpl.live/static/esports/yt_icon.png">
+                            </div>
+                            <div>
+                                <h5>YouTube</h5>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://facebook.com/PlayMPLEsports">
+                        <div class="d1">
+                            <div>
+                                <img src="https://www.mpl.live/static/esports/fb_icon.png">
+                            </div>
+                            <div>
+                                <h5>Facebook</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <h1>MPL Esports Champions</h1>
+
+                <div id="mpl-esports">
+                    <div class="first-winner">
+                        <div class="win-img">
+                            <div>
+                                <img class="img1" src="https://www.mpl.live/static/esports/esport_arena_winner.png">
+                            </div>
+                            <div>
+                                <img class="img2" src="https://www.mpl.live/static/esports/rishi_winner.png">
+                            </div>
+                            <div>
+                                <img class="img3" src="https://www.mpl.live/static/esports/game_chess_winner.png">
+                            </div>
+                        </div>
+                        <div class="win-name">
+                            <h5>WINNER</h5>
+                            <h6>RISHI</h6>
+                            <h2>Won ₹1.5 Lakhs</h2>
+                        </div>
+                    </div>
+
+                    <div class="sec-winner">
+                        <div class="win-img">
+                            <div><img class="img1" src="https://www.mpl.live/static/esports/esport_arena_winner.png">
+                            </div>
+                            <div><img class="img2" src="https://www.mpl.live/static/esports/navneet_winner.png"></div>
+                            <div><img class="img3" src="https://www.mpl.live/static/esports/game_chess_winner.png">
+                            </div>
+                        </div>
+                        <div class="win-name">
+                            <h5>RUNNER - UP</h5>
+                            <h6>NAVNEET</h6>
+                            <h2>Won ₹90,000</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Match Videos</h1>
+                <div id="videos">
+                    <div class="v1">
+                        <iframe src="https://www.youtube.com/embed/jj3EiZRD2Jk"></iframe>
+                    </div>
+                    <div class="v2">
+                        <iframe src="https://www.youtube.com/embed/FIj935OjBQQ"></iframe>
+                    </div>
+                </div>
+
+                <div id="video-footer">
+                    <div class="vf1">
+                        <div>
+                            <img id="vf-img" src="https://www.mpl.live/static/esports/wcc_stream.png">
+                        </div>
+                        <div>
+                            <h5 id="wcc">WCC Masters™ Grand Finale</h5>
+                            <h6 id="wcc1">WCC MASTERS</h6>
+                        </div>
+                    </div>
+
+                    <div class="vf2">
+                        <div>
+                            <img id="vf-img2" src="https://www.mpl.live/static/esports/wcc_stream.png">
+                        </div>
+                        <div>
+                            <h5 id="wcc">WCC Masters™ Highlight</h5>
+                            <h6 id="wcc1">WCC MASTERS</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="test">Testimonials</h1>
+            <div id="Testimonials">
+                <div class="Testimonials-div1">
+                    <img id="test-img" src="https://www.mpl.live/static/esports/testimonial_alen.png">
+                    <div id="test-head">
+                        <h2 class="test-head-name">ALEN</h2>
+                        <h2 class="test-head-add">Calicut</h2>
+                        <p class="test-head-desc">"I came to know about MPL from my college friends. I play Rogue Heist, WCC, Speed Chess, and Pool. I have earned about 5.63L so far. The application is friendly to use, the customer support system is also quick to respond and is
+                            very helpful.”</p>
+                    </div>
+                </div>
+                <div class="Testimonials-div2">
+                    <img id="test-img" src="https://www.mpl.live/static/esports/testimonials_anushk.png">
+                    <div id="test-head">
+                        <h2 class="test-head-name">Anushk</h2>
+                        <h2 class="test-head-add">Indore</h2>
+                        <p class="test-head-desc">"I was introduced to the MPL app by my friend. I play Rogue Heist and Chess mostly on MPL and I have earned 70,000/-. The app is amazing, we can compete against each other and show who is better.”</p>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="faqs">FAQs</h1>
+            <div id="FAQ-div">
+                <div id="faq-div1" onclick="d01()">
+                    <h2 class="faq-div1-h2">What Is MPL - Weekly Esports Arena?
+                        <h2>
+                </div>
+                <div class="icon-div">
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25224.png" onclick="d01()">
+                </div>
+            </div>
+
+            <div id="FAQ-div2">
+                <div id="faq-div2" onclick="d02()">
+                    <h2 class="faq-div1-h2">What are the benefits of Esports?
+                        <h2>
+                </div>
+                <div class="icon-div">
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25224.png" onclick="d02()">
+                </div>
+            </div>
+
+            <div id="FAQ-div3">
+                <div id="faq-div3" onclick="d03()">
+                    <h2 class="faq-div1-h2">What is the league age range?
+                        <h2>
+                </div>
+                <div class="icon-div">
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25224.png" onclick="d03()">
+                </div>
+            </div>
+
+            <div id="FAQ-div4">
+                <div id="faq-div4" onclick="d04()">
+                    <h2 class="faq-div1-h2">Are there additional fees?
+                        <h2>
+                </div>
+                <div class="icon-div">
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25224.png" onclick="d04()">
+                </div>
+            </div>
+
+            <div id="FAQ-div5">
+                <div id="faq-div5" onclick="d05()">
+                    <h2 class="faq-div1-h2">Do I have to attend every game?
+                        <h2>
+                </div>
+                <div class="icon-div">
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25224.png" onclick="d05()">
+                </div>
+            </div>
+
+            <div id="FAQ-div6">
+                <div id="faq-div6" onclick="d06()">
+                    <h2 class="faq-div1-h2">Where can I watch the Esports game live?
+                        <h2>
+                </div>
+                <div class="icon-div">
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25224.png" onclick="d06()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="mpl">
+        <h1>Get a Great Experience on MPL</h1>
+        <div>
+            <div><img src="https://www.mpl.live/static/trust-icons/trust-1.png">
+                <br>
+                <h3 class="mpl-h3">6 Crore+</h3>
+                <h4 class="mpl-h4">Users</h4>
+            </div>
+            <div><img src="https://www.mpl.live/static/trust-icons/trust-2.png">
+                <br>
+                <h3 class="mpl-h3">100% Secure</h3>
+                <h4 class="mpl-h4">& Legals</h4>
+            </div>
+            <div><img src="https://www.mpl.live/static/trust-icons/trust-3.png">
+                <br>
+                <h3 class="mpl-h3">24x7</h3>
+                <h4 class="mpl-h4">Customer Support</h4>
+            </div>
+            <div><img src="https://www.mpl.live/static/trust-icons/trust-4.png">
+                <br>
+                <h3 class="mpl-h3">Cashback</h3>
+                <h4 class="mpl-h4">Offers</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="sponsers">
+        <h1 class="sponsers-head">Proud Sponsors of</h1>
+        <div id="sponsers-logo">
+            <div><img class="sponsers-img1" src="https://www.mpl.live/static/2x/RCB.png"></div>
+            <div><img class="sponsers-img2" src="https://www.mpl.live/static/2x/KKR.png"></div>
+            <div><img class="sponsers-img3" src="https://www.mpl.live/static/2x/bboss.png"></div>
+        </div>
+    </div>
+
+    <div id="members">
+        <h1> MPL is a Member of</h1>
+        <div class="mpl-members">
+            <div><img src="https://www.mpl.live/static/2x/trf-logo.png"></div>
+            <div><img src="https://www.mpl.live/static/2x/aigf-logo.png"></div>
+            <div><img src="https://www.mpl.live/static/2x/iamai-logo.png"></div>
+            <div><img src="https://www.mpl.live/static/2x/FICCI_Logo_High_Res.png"></div>
+        </div>
+    </div>
+
+
+    <footer class="footer"></footer>
+    <%- include('partials/educationalOnly') %>
+
+</body>
+<script type="module">
+    import {footerFunction,bodyPart} from "/components/nav-footer.js"; var footer_con = document.querySelector(".footer"); footer_con.innerHTML = footerFunction();
+
+</script>
+<script src="/scripts/esport.js"></script>
+
+</html>

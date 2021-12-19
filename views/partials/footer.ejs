@@ -9,7 +9,7 @@
         <div class="heading">EDITOR PICKS</div>
 
         <% for (let i = 0 ; i < 3  ; i++) {%>
-            <div class="rohit">
+            <div class="rohit" onclick="window.location.href='<%= `news/${digitalGames[i]._id}` %>' ">
                 <img class="imgrum"
                     src="<%= digitalGames[i].urlToImage %>">
                 <div class="news"><%= digitalGames[i].title %>
@@ -22,7 +22,7 @@
     <div class="footerB">
         <div class="heading">POPULAR POSTS</div>
             <% for (let i = 0 ; i < 3  ; i++) {%>
-                <div class="rohit">
+                <div class="rohit" onclick="window.location.href='<%= `news/${latestPosts[i]._id}` %>' ">
                     <img class="imgrum"
                         src="<%= latestPosts[i].urlToImage %>">
                     <div class="news"><%= latestPosts[i].title %>

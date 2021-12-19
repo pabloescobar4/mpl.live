@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ABOUT - MPL</title>
+</head>
+<style>
+	
+.nav{
+	border-bottom:1px solid rgb(212, 210, 210);
+	width:100%;
+	height:70px;
+	
+	
+
+}
+.nav2{
+	border-bottom:1px solid rgb(212, 210, 210);
+	width:100%;
+	height:70px;
+	background-color: white;
+	margin-left:-1%
+	
+}
+.new{
+	margin:1%;
+	margin-left:7%
+}
+.mplpic{
+	width:16%;
+	height:18%;
+}
+.content{
+	border:0px solid rgb(212, 210, 210);
+	width:100%;
+	height:38%;
+	color:#585858
+}
+.abt{
+margin:9% 2% 2% 47%;
+
+
+}
+.ab{
+font-size:30px;
+font-family: "Roboto Condensed", sans-serif;
+	font-weight: 400;
+}
+.cont{
+	border:0px solid rgb(212, 210, 210);
+	width:70%;
+	height:18%;
+	margin:0.8% 12% 0% 16%; 
+	font-size: 16px;
+	padding:0.5%;
+	line-height: 180%;
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 400;
+	color:#797575
+}
+.newcnt{
+	width:60%;
+	height:30%;
+	border:0px solid red;
+	margin:19% 0% 0% 19%;
+	color:#a7a7a7
+}
+.newcnt1{
+	width:80%;
+	height:30%;
+	border:0px solid red;
+	margin:-2.5% 0% 0% 10%;
+	color:#a7a7a7;
+	font-family: "Roboto Condensed", sans-serif;
+}
+.know{
+	border:0px solid rgb(17, 15, 15);
+	
+    font-size:40px;
+	width:70%;
+	height:38%;
+	color:#0e0b0b;
+	margin-left:40%;
+	font-family: "Roboto Condensed", sans-serif;
+}
+.set{
+	border:0px solid rgb(212, 210, 210);
+padding:2%;
+
+}
+.tand{
+display:flex;
+justify-content:space-between;
+color:red;
+font-family: "Roboto Condensed", sans-serif;
+}
+.disc{
+	margin-top:7%;
+	font-size:15px;
+text-align: center;
+font-size: 12px;
+line-height:18px;
+font-family: "Roboto Condensed", sans-serif;
+
+}
+.read{
+	color:red;
+	margin-left: 46%;
+	font-size: 15px;
+	margin-bottom:2%;
+	font-family: "Roboto Condensed", sans-serif;
+
+}
+.bm{
+	background-color: #4a4a4a;
+	padding:1%;
+	color:white;
+	text-align: center;
+	margin:-1%
+}
+.copy{
+	font-size:19px;
+	font-family: "Roboto Condensed", sans-serif;
+	text-align: center;
+}
+.az{
+	text-align: center;
+	font-size:12px;
+	line-height:18px;
+}
+.img1{
+width:5%;
+border-radius:4%;
+margin-left:35%;
+padding:2% 3% 1% 0%
+}
+.img2{
+width:5%;
+border-radius:4%;
+padding:1% 0% 1% 0%
+}
+.img3{
+width:7%;
+border-radius:4%;
+
+padding:1% 1% 0% 1%
+}
+.img4{
+width:7%;
+
+
+padding:0% 0% 0% 0%
+}
+.mplham{
+width:1.9%;
+justify-content: space-around;
+padding-left: 74%;
+}
+
+
+.sizeof{
+	font-size:25px;
+	font-family: "Roboto Condensed", sans-serif;
+	text-align: right;
+	margin-right:7%;
+	line-height:60px
+}
+
+
+
+
+		/* The Modal (background) */
+		.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  left:0%;
+  top:0%;
+  background-color: #fefefe;
+  width: 100%;
+  height:100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  font-family: 'Domine', serif;
+}
+
+/* The Close Button */
+.close {
+  color:rgb(17, 15, 15);
+ 
+  font-size: 28px;
+  
+  border :0px solid red;
+  margin-left:75%; 
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.modal-header {
+  padding: 2px 16px;
+
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;
+height:100%}
+
+.modal-footer {
+
+  padding: 2px 16px;
+  background-color: #eb182c;
+  color: white;
+
+}
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {right: -500px; opacity: 0} 
+  to {right: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {right: -500px; opacity: 0}
+  to {right: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<body>
+
+	<div class = "nav">
+		<div class ="new">
+			<img onclick ="window.location.href = '/'" class = "mplpic" src="https://about.mpl.live/wp-content/uploads/2019/04/MPL_Logo-300x63.png" alt="" >
+			<img class = "mplham" id = myBtn src="https://cdn.icon-icons.com/icons2/1129/PNG/512/menubuttonofthreelines_79781.png" alt="">
+		</div>
+	</div>
+	<div class = "content">
+		<div class = "abt" >
+		<div class = "ab">ABOUT</div>	
+		
+		</div>
+		<div class = "cont">We took your love for mobile gaming and gave it an interesting spin! Why play for free when you could win amazing rewards and CASH for playing your favourite games? Everyday hundreds and thousands of players join MPL and unlock the hero within them.</div>
+		<div class = "cont">We keep your gaming experience fun by offering you a variety of tournaments and 1v1 battles around the clock.</div>
+		<div class = "cont">Simply participate, compete and win cash prizes all day! Once the results are announced for a tournament, winners can cash-out immediately with Paytm, UPI or bank transfer.</div>
+		<div class = "cont">There is more than one way to earn on MPL. Refer the app to your friends and family and earn cash every time they join the app. So what are you waiting for? Download the app NOW and start winning!</div>
+	</div>
+    <div class = "newcnt">
+		<div class = "know set"><b>KNOW US</b></div>
+		<div class = "ima set">
+			<img class = "img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="">
+		<img class = "img2"  src="https://smallimg.pngkey.com/png/small/448-4486200_instagram-logo-circle.png" alt="">
+		<img class = "img3"  src="https://cliply.co/wp-content/uploads/2019/04/371903520_SOCIAL_ICONS_YOUTUBE.png" alt="">
+		<img  class = "img4" src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" alt="">
+		</div>
+		<div class = " tand set">
+			<div>Terms and Conditions</div>
+			<div>Games of Skill</div>
+			<div>Privacy Policy</div>
+			<div>Returns, Refunds & Cancellation</div>
+			<div>About Us
+			</div>
+			<div>FAQs</div>
+			<div>Help & Support</div>
+
+		</div>
+		
+		<div class = "disc set">DISCLAIMER
+			<p>Galactus Funware is the owner of, and reserves all rights to the assets, content, services, information, and products and graphics in the website except any third party content</p>
+		
+		</div>
+		
+	</div>
+	<div class = "newcnt1">
+	
+
+		<p class = "az" >Galactus Funware refuses to acknowledge or represent about the accuracy or completeness or reliability or adequacy of the website's third party content. These content, materials, information, services, and products in this website, including text, graphics, and links, are provided "AS IS" and without warranties of any kind, whether expressed or implied.
+
+		</p>
+		
+		<div class = "read ">Read More</div>
+		
+	</div>
+	<div class = "copy bm">	Copyright © Galactus Funware Technology Private Limited | All rights reserved</div>
+
+
+
+
+
+
+
+
+
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	
+	<div class="modal-content">
+	  <div class="modal-header">
+		  
+		  <div class = "nav2">
+			<div class ="new">
+				<img class = "mplpic" src="https://about.mpl.live/wp-content/uploads/2019/04/MPL_Logo-300x63.png" alt="">
+				<span class="close">&times;</span>
+			</div>
+		</div>
+		
+		 
+	  </div>
+	  <div class="modal-body"style="font-size:20px ; font-family: 'Domine', serif;   background-color: #eb182c;;color:white;">
+		  <div >
+			 <div class = "sizeof" >ABOUT</div>
+			 <div  class = "sizeof" >RETURN,REFUND & CANCELLATION POLICY</div>
+			 <div  class = "sizeof" >PRIVACY POLICY</div>
+			 <div  class = "sizeof" >GAME OF SKILLS AND SAFETY PRECAUTIONS FOR RESPONSIBLE GAMING</div>
+			 <div  class = "sizeof" >TERMS AND CONDITION OF USE</div>
+
+		  </div>
+		
+		
+	  </div>
+	  
+  <div class ="placeorder1" >
+	  
+	  
+	</div>
+	  
+	</div>
+  
+  </div>
+  <%- include('partials/educationalOnly') %>
+  
+</body>
+</html>
+<script>
+	// Get the modal
+var modal = document.getElementById("myModal");
+	
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+	
+</script>

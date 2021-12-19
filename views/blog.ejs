@@ -27,7 +27,6 @@
   <% } %>
 
   <div>
-
     <%- include('partials/navbar') %>
     <%- include('partials/signing') %>
 
@@ -39,7 +38,7 @@
         <span></span>
       </div>
       <div id="highlighted_news">
-        <div>
+        <div onclick="window.location.href='<%= `news/${highlighted[0]._id}` %>' ">
           <div class="highlighted_news_content">
             <span>
               <%= highlighted[0].category[0] %>
@@ -53,8 +52,8 @@
         </div>
         <div>
           <% for(let i=1 ; i < 4 ; i++) { %>
-          <div>
-            <div class="highlighted_news_content">
+          <div onclick="window.location.href='<%= `news/${highlighted[i]._id}` %>' ">
+            <div class="highlighted_news_content" >
               <span>
                 <%= highlighted[i].category[0] %>
               </span>
@@ -74,11 +73,11 @@
     <section class="container" id="middle_section">
       <div id="left_middle">
         <section id="match_prediction">
-          <!-- <span class="header">TODAY'S MATCH PREDICTION</span> -->
           <span class="header">TODAY'S MATCH PREDICTION</span>
           <div>
             <% for (let i=0; i < 5 ; i++) { %>
-            <div>
+            <% let link = `news/${matchPredictions[i]._id}` %>
+            <div onclick="window.location.href='<%= link %>' ">
               <div>
                 <img src="<%=matchPredictions[i].urlToImage%>">
               </div>
@@ -102,9 +101,9 @@
         <section id="latest_posts">
           <span class="header">Latest Posts</span>
           <div>
-            <% latestPosts.forEach(({urlToImage, category, title})=> { %>
+            <% latestPosts.forEach(({urlToImage, category, title, _id})=> { %>
 
-            <div>
+            <div onclick="window.location.href='<%= `news/${_id}` %>' ">
               <div>
                 <img src="<%= urlToImage %>">
                 <span>
@@ -124,9 +123,9 @@
         <section id="digital_games">
           <span class="header">DIGITAL SKILL GAMES</span>
           <div>
-            <% digitalGames.forEach(({urlToImage, title, category})=> { %>
+            <% digitalGames.forEach(({urlToImage, title, category, _id})=> { %>
 
-            <div>
+            <div onclick="window.location.href='<%= `news/${_id}` %>' ">
               <div style='background-image: url(<%= `${urlToImage}` %>)'>
                 <span>
                   <%= category[0] %>
@@ -142,7 +141,7 @@
         </section>
         <section id="popular_trends">
           <span class="header">POPULAR TRENDS</span>
-          <div>
+          <div onclick="window.location.href='<%= `news/${popularTrends[0]._id}` %>' ">
             <div style="background-image: url(<%= `${popularTrends[0].urlToImage}` %>)">
               <span>
                 <%= popularTrends[0].category[0] %>
@@ -162,7 +161,7 @@
           </div>
           <div>
             <% for(let i=1; i < 3 ; i++) { %>
-            <div>
+            <div onclick="window.location.href='<%= `news/${popularTrends[i]._id}` %>' ">
               <div style="background-image: url(<%= `${popularTrends[i].urlToImage}` %>)">
                 <span>
                   <%= popularTrends[i].category[0] %>
@@ -189,6 +188,9 @@
 
   <!-- Footer -->
   <%- include('partials/footer') %>
+
+  <%- include('partials/educationalOnly') %>
+
 
   <script>
     function setDate() {
@@ -380,13 +382,7 @@
     });
 
     async function showSearchMobResult(src, target, items) {
-
-
-      
       let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-      
-
-
 
       let query = document.querySelector(src);
 
@@ -406,6 +402,9 @@
 
       for (let i = 0; i < items; i++) {
         let div = document.createElement("div");
+        div.onclick = () => {
+          window.location.href = `/news/${result[i]._id}` ;
+        }
 
         let imgDiv = document.createElement("div");
 

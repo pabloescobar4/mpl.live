@@ -3,6 +3,41 @@ body {
     margin: 0;
     padding: 0;
 }
+#news{
+    background-color: rgb(255, 255, 255);
+    margin-top: -450px;
+}
+#left{
+    margin-left: 15%;
+    background-color:white;
+    width: 50%;
+    float: left;
+}
+#facebook{
+  width: 20%;
+  height: 7%;
+  background-color: blue;
+}
+#facebook p{
+    margin-left: 50px;
+}
+#right h4{
+    background-color: black;
+    color: white;
+    width: 52%;
+}
+#right img{
+    width: 100px;
+}
+*{
+    clear: both;
+}
+#black{
+    margin-left: 0%;
+    width: 50%;
+    background-color: black;
+    color: white;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;

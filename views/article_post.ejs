@@ -13,13 +13,14 @@
 </head>
 
 <body>
+  <%- include('partials/educationalOnly') %>
 
   <%- include('partials/navbar') %>
   <%- include('partials/signing') %>
 
   <div class='container'>
 
-    <form action="http://localhost:3000/articles" method="POST" enctype="multipart/form-data" class='form' id="postForm">
+    <form action="articles" method="POST" enctype="multipart/form-data" class='form' id="postForm">
       <div>
         <label for="urlToImage">Image:</label>
         <input type="file" name="urlToImage">

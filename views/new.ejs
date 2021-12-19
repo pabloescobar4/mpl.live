@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/blog_style.css" type='text/css'>
+  <link rel="stylesheet" href="/css/nav_blog.css" type='text/css'>
+  <link rel="stylesheet" href="/css/signing.css" type='text/css'>
+  <link rel="stylesheet" href="/css/footer_blog.css" type='text/css'>
+  <link rel="stylesheet" href="/css/news.css" type='text/css'>
+
+</head>
+
+<body>
+
+  <%- include('partials/navbar') %>
+  <%- include('partials/signing') %>
+
+
+  <div id="news">
+
+    <% news.forEach(function (news) {%>
+
+    <div id="left">
+
+      <p id="black"><%=news.category%></p>
+      <h1><%=news.title%></h1>
+      <img src=<%=news.urlToImage%>>
+
+      <p><%=news.description%></p>
+      <h2>How to purchase the south african T20 League Playoff Season Ticket?</h2>
+
+      <p>Purchasing a ticket for the Playoffs of the Lanka T20 League is fairly simple and seamless. You just have to follow the five steps mentioned below and you’re set to participate in the grand contests for FREE. </p>
+      <p>Step 1: First you have to Install the MPL app from a browser and open the homepage of the app. There, you will get a banner that reads “Lanka T20 League Season Ticket Sale”. Click on that banner to proceed further. Remember the app isn’t available on Play Store. </p>
+      <p>Step 2: Here, you can see an option to buy “Lanka T20 League Playoff Season Ticket”. Click on the Buy option at the right side of the ticket. The ticket will be available at a price of Rs. 9. </p>
+      <p>Step 3: You will now be redirected to a page where you can go through the terms and conditions of the Season Ticket. There you can see the matches that this particular ticket is valid for. After reading all of the terms and conditions carefully, you can move forward by clicking the “Buy for ₹9” option. </p>
+      <p>Step 4: The app will now redirect you to the “Add Deposit” page. This will show you the current balance available in your MPL wallet. If you have sufficient balance, you can go ahead and use the same for buying the Season Ticket for the Lanka T20 League at ₹9 only. However, if you do not have a sufficient balance, you will need to top up your MPL wallet first. Click the “Proceed to add cash” button, after which you can refill your wallet with as much money as you wish. You will get a variety of transaction options such as Debit or Credit Cards, Paytm, Google Pay, UPI payment or Net banking to add cash into your wallet. All payments done on the MPL app are 100% secure and legal. </p>
+      <p>Step 5: The transaction will be completed once the cash is transferred to your wallet. You can now find your Season Ticket in the wallet, in the Tickets section. </p>
+      <h2>On which matches will the season ticket be applicable?</h2>
+      <p>The Lanka T20 League Playoff Season Ticket will be applicable across four matches to be played from December 19 to December 23. Below is the list of matches on which the Lanka T20 League Weekday Season Ticket will be applicable:</p>
+      <p> Eliminator – December 19th, 3:00 PM IST</p>
+
+      <p> Qualifier 1 – December 19th, 7:30 PM IST </p>
+
+      <p> Qualifier 2 – December 21st, 7:30 PM IST </p>
+
+      <p> Final – December 23rd, 7:30 PM IST </p>
+
+
+
+      <h2>How to use the Lanka T20 League Season Ticket?</h2>
+      <p>When you purchase the Lanka T20 League Playoff Season Ticket, you can use it on each of the 4 matches of the Lanka T20 League mentioned above . Select the match in which you want to participate and create a fantasy team. You can get one FREE entry in a Grand Contest of up to Rs 20 Lakhs. Isn’t that a steal deal or what!
+
+        FAQs</p>
+      <p>1) Can I buy more than one ticket?</p>
+
+      <p>No, you are allowed to purchase only one season ticket per account. Once the validity of the ticket ends, you can purchase another ticket. </p>
+
+      <p>2) Will I get any refunds in case I do not want to use my Season Ticket?</p>
+
+      <p>There will be no refund if you do not use your Season Ticket. Once you have purchased the Season Ticket, you can not avail a refund in case of any scenario, even if one or multiple matches get abandoned or cancelled. </p>
+
+      <p>3) When will the Season Ticket be activated?</p>
+
+      <p>The Season Ticket of the Lanka T20 League will be activated as soon as the contests are up for the games mentioned in the Lanka T20 League Playoff Season Ticket offer.</p>
+
+      <br>
+      <br>
+
+    </div>
+
+    <% }) %>
+
+
+
+
+
+  </div>
+
+  <span id="goto_top_btn"><img src="/images/up-arrow.png" width="20px"></span>
+
+
+  <%- include('partials/educationalOnly') %>
+
+
+</body>
+<script>
+  function setDate() {
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    let date = new Date();
+
+    let currentDate = days[date.getDay()] + ", " + months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
+
+    document.getElementById("todays_date").textContent = currentDate;
+  }
+
+  setDate();
+
+  // Nav script starts
+  let search_ico = document.querySelector("#nav_blog > div > div:nth-of-type(3) > svg");
+  search_ico.addEventListener("click", showSearchBox);
+
+  let goto_top_btn = document.getElementById("goto_top_btn");
+  goto_top_btn.addEventListener("click", gotoTop);
+
+  let mobile_search = document.getElementById("mobile_search");
+  mobile_search.addEventListener("click", showMobileSearch);
+
+  function showMobileSearch() {
+    document.getElementById("mobile_search_modal").style.display = "block";
+  }
+
+  let mobile_search_close = document.getElementById("mobile_search_close");
+  mobile_search_close.addEventListener("click", closeMobileSearch);
+
+  function closeMobileSearch() {
+    document.getElementById("mobile_search_modal").style.display = "none";
+  }
+
+  let mobile_hamburger = document.getElementById("mobile_hamburger");
+  mobile_hamburger.addEventListener("click", showMobileNavOptions);
+
+  function showMobileNavOptions() {
+    document.getElementById("mobile_nav_options").style.display = "block";
+  }
+
+  let mobile_nav_close = document.querySelector("#close_nav_options");
+  close_nav_options.addEventListener("click", closeMobileNavOptions);
+
+  function closeMobileNavOptions() {
+    document.getElementById("mobile_nav_options").style.display = "none";
+  }
+
+  function setMobileOptionDrop() {
+    let options = document.querySelectorAll("#mobile_options_content > ul > li");
+
+    // console.log(options);
+
+    options.forEach(e => {
+      let div = e.querySelector("div:nth-of-type(2)");
+      let arrow = e.querySelector("div:nth-of-type(1) > img");
+      if (div !== null) {
+        div.style.display = "none";
+        e.addEventListener("click", () => {
+          if (div.style.display == "none") {
+            div.style.display = "block";
+            arrow.src = "./images/down-white-arrow.png";
+          } else {
+            div.style.display = "none";
+            arrow.src = "./images/right-arrow.png";
+          }
+        });
+      }
+    })
+  }
+
+  setMobileOptionDrop();
+
+
+  function showSearchBox() {
+    let search_box = document.getElementById("search_box");
+
+    search_box.style.display = "block";
+
+
+    let search_input = document.getElementById("search_input");
+
+    search_input.focus();
+
+    search_input.onblur = () => {
+      search_box.style.opacity = "0";
+      search_box.style.transform = "translateY(30px)";
+      setTimeout(() => {
+        search_box.style.display = "none";
+        search_box.style.opacity = "1";
+        search_box.style.transform = "none";
+      }, 200);
+    }
+
+  }
+
+  function gotoTop() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  let changed = false;
+  window.onscroll = () => {
+    let nav = document.getElementById("nav_blog");
+    let top_btn = document.getElementById("goto_top_btn");
+    if (window.scrollY > nav.offsetHeight && !changed) {
+      nav.classList = "nav_scrolled";
+      changed = true;
+      top_btn.style.display = "flex";
+    } else if (window.scrollY <= nav.offsetHeight) {
+      changed = false;
+      nav.classList.remove("nav_scrolled");
+      top_btn.style.display = "none";
+    }
+  }
+
+  // Nav script ends
+
+  async function getArticleData(url) {
+    try {
+      let res = await fetch(url);
+      let data = await res.json();
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+
+  async function getQueryResult(query) {
+    try {
+      let res = await fetch(`https://mplclone.herokuapp.com/articles/search?query=${query}`);
+      let data = await res.json();
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  let searchTimeout;
+
+  function searchDebounce(src, target, items) {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      showSearchMobResult(src, target, items);
+    }, 500);
+  }
+
+  document.querySelector("#mobile_search_modal > input").addEventListener("input", () => {
+    searchDebounce("#mobile_search_modal > input", "search_modal_result", 4)
+  });
+
+  document.querySelector("#search_input").addEventListener("input", () => {
+    searchDebounce("#search_input", "search_result", 6)
+  });
+
+  async function showSearchMobResult(src, target, items) {
+
+
+
+    let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+
+
+
+    let query = document.querySelector(src);
+
+    let container = document.getElementById(target);
+
+    container.innerHTML = "";
+
+    if (query.value.length == 0) {
+      return;
+    }
+
+    let result = await getQueryResult(query.value);
+
+    if (result.length == 0) {
+      return;
+    }
+
+    for (let i = 0; i < items; i++) {
+      let div = document.createElement("div");
+
+      let imgDiv = document.createElement("div");
+
+      let img = document.createElement("img");
+      img.src = result[i].urlToImage;
+
+      imgDiv.appendChild(img);
+
+      let detailsDiv = document.createElement("div");
+
+      let title = document.createElement("p");
+      title.textContent = result[i].title;
+
+
+      let storedDate = new Date(result[i].publishedAt);
+
+      let date = document.createElement("p");
+      date.textContent = `${monthNames[storedDate.getMonth()]} ${storedDate.getDate()}, ${storedDate.getFullYear()}`;
+
+      detailsDiv.append(title, date);
+
+      div.append(imgDiv, detailsDiv);
+
+      container.append(div);
+    }
+
+  }
+
+
+
+  // Signing
+
+  document.getElementById("login_btn").addEventListener("click", () => {
+    showOverlay('login')
+  });
+  document.getElementById("join_btn").addEventListener("click", () => {
+    showOverlay('signup')
+  });
+  document.getElementById("login_overlay_close_btn").addEventListener("click", closeOverlay);
+  document.getElementById("signup_overlay_close_btn").addEventListener("click", closeOverlay);
+
+
+  function showOverlay(t) {
+    let overlay = document.getElementById("overlay");
+    overlay.style.display = "block";
+    if (t == "signup") {
+      document.getElementById("overlay_signup").style.display = "block";
+      document.getElementById("overlay_login").style.display = "none";
+    } else if (t == "login") {
+      document.getElementById("overlay_signup").style.display = "none";
+      document.getElementById("overlay_login").style.display = "block";
+    }
+    overlay.onscroll
+  }
+
+  function setSignOverlay() {
+    document.getElementById("overlay_background").addEventListener("click", () => {
+      closeOverlay()
+    });
+
+    document.getElementById("signup_form").addEventListener("submit", () => {
+      SignUp(event)
+    });
+
+    document.getElementById("login_form").addEventListener("submit", () => {
+      Login(event)
+    });
+  }
+
+  setSignOverlay();
+
+  async function SignUp(e) {
+    e.preventDefault();
+
+    let form = document.getElementById("signup_form");
+
+    let details = {
+      name: form.signup_name.value,
+      email: form.signup_mail.value,
+      password: form.signup_pass.value,
+      username: form.signup_username.value,
+      mobile: form.signup_mobile.value,
+      description: form.signup_description.value,
+    }
+
+    // console.log(details);
+
+    details = JSON.stringify(details);
+
+    try {
+      let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/register", {
+        method: "POST",
+        body: details,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      let data = await res.json();
+
+      if (data.error) {
+        showSignUpFailed();
+      } else {
+        showSignUpSuccessful();
+      }
+
+    } catch (e) {
+      // console.log(e);
+    }
+
+  }
+
+  async function Login(e) {
+    e.preventDefault();
+
+    document.getElementById("login_failed").style.display = "none";
+
+    let form = document.getElementById("login_form");
+
+    let details = {
+      password: form.login_pass.value,
+      username: form.login_username.value,
+    }
+
+    console.log(details);
+
+    details = JSON.stringify(details);
+
+    try {
+      let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/login", {
+        method: "POST",
+        body: details,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      let data = await res.json();
+
+      // console.log(data);
+
+      if (data.error) {
+        showLoginFailed();
+      } else {
+        fetchUserData(form.login_username.value, data.token);
+      }
+
+    } catch (e) {
+      // console.log(e);
+    }
+
+  }
+
+  function closeOverlay() {
+    document.getElementById("overlay").style.display = "none";
+  }
+
+  function showSignUpFailed() {
+    // alert("failed");
+    document.getElementById("signup_failed").style.display = "block";
+    document.getElementById("signup_success").style.display = "none";
+  }
+
+  function showSignUpSuccessful() {
+    // alert("success");
+    document.getElementById("signup_failed").style.display = "none";
+    document.getElementById("signup_success").style.display = "block";
+    setTimeout(() => {
+      closeOverlay()
+    }, 500);
+  }
+
+  async function fetchUserData(username, token) {
+    let res = await fetch(`https://masai-api-mocker.herokuapp.com/user/${username}`, {
+      headers: {
+        'Content-Type': 'application/json',
+
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    let data = await res.json();
+
+    // console.log(data);
+
+    showLoggedUser(data);
+  }
+
+  function showLoginFailed() {
+    document.getElementById("login_failed").style.display = "block";
+  }
+
+  function showLoggedUser(data) {
+    let nav_user = document.getElementById("nav_user");
+    nav_user.querySelector("#logged_username").innerText = data.username;
+    nav_user.style.display = "flex";
+
+    document.getElementById("login_option").style.display = "none";
+
+    closeOverlay();
+  }
+</script>
+
+</html>

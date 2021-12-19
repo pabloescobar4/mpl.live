@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=data.name%>
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"></link>
+    <link href="//db.onlinewebfonts.com/c/64066084d97b188b68757ef02ab5faa5?family=Trim+Web+Regular" rel="stylesheet" type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/675a557703d8579401fcf6a3f9937663?family=Trim+Web+Medium" rel="stylesheet" type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/93942a49cb4892f168e67b0ad3159985?family=TrimWebThin" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="https://www.mpl.live/static/MPL_Logo_2.png" type="png">
+    <link rel="stylesheet" href="/css/pages.css">
+    <style>
+        #banner {
+            background-image: url("<%=data.banner.banner_url%>") !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/">
+                    <img id="logo1" src="https://www.mpl.live/static/hamburger/mpl-logo.png" alt="">
+                </a>
+            </div>
+            <div class="sub-nav">
+                <div class="dropdown nav-btn">
+                    <div class="game">MPL Game</div>
+                    <div class="img img-add"></div>
+                </div>
+                <div class="mpl-es nav-btn">
+                    <a class="emrgcy" href="/esport">MPL Esports</a>
+                </div>
+                <div class="nav-about nav-btn">
+                    <a class="emrgcy" href="/about">About</a>
+                </div>
+                <div class="nav-blog nav-btn">
+                    <a class="emrgcy" href="/blog">Blog</a>
+                </div>
+                <div class="nav-faq nav-btn">
+                    <a class="emrgcy" href="/faq">FAQs</a>
+                </div>
+                <div class="nav-help nav-btn">
+                    <a href="/help">
+                        <img src="https://www.mpl.live/static/hamburger/help_icon.png" alt="">
+                        <span id="hlp">Help</span>
+                    </a>
+                </div>
+            </div>
+            <div id="hambr" class="hambr-add-icon">
+                <!-- <img id="hambr-img" src="/icons/menu.png" alt=""> -->
+            </div>
+            <div class="mobile-con mobile-con-hidden">
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/fantasy_helmet.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Fantasy</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop1" class="minus-container mov-hidden">
+                        <a href="/dropdown/fantasy_cricket">
+                            <img class="minus-con-img" src="/icons/mobile_11.png" alt="">
+                            <p class="minus-con-text">Fantasy Cricket</p>
+                        </a>
+                        <a href="/dropdown/football">
+                            <img class="minus-con-img" src="/icons/fantasy-cricket12.png" alt="">
+                            <p class="minus-con-text">Fantasy football</p>
+                        </a>
+                        <a href="/dropdown/basketball">
+                            <img class="minus-con-img" src="/icons/fantasy-basketball13.png" alt="">
+                            <p class="minus-con-text">Fantasy Backetball</p>
+                        </a>
+                        <a href="#">
+                            <img class="minus-con-img" src="/icons/fantasy_icon14.png" alt="">
+                            <p class="minus-con-text">Fantasy Games</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/card-skill.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Card Skill</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn2" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop2" class="minus-container mov-hidden">
+                        <a href="/dropdown/rummy">
+                            <img class="minus-con-img" src="/icons/game_icon_21.png" alt="">
+                            <p class="minus-con-text">Rummy</p>
+                        </a>
+                        <a href="/dropdown/Poker">
+                            <img class="minus-con-img" src="/icons/game_icon_22.png" alt="">
+                            <p class="minus-con-text">Poker</p>
+                        </a>
+                        <a href="/dropdown/call break">
+                            <img class="minus-con-img" src="/icons/game_icon_23.png" alt="">
+                            <p class="minus-con-text">Call Break</p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/sport_games.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Sports Games</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn3" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop3" class="minus-container mov-hidden">
+                        <a href="/dropdown/wcc2">
+                            <img class="minus-con-img" src="/icons/game_icon_31.png" alt="">
+                            <p class="minus-con-text">Wcc2</p>
+                        </a>
+                        <a href="/dropdown/baseballstars-game">
+                            <img class="minus-con-img" src="/icons/baseball_games_32.png" alt="">
+                            <p class="minus-con-text">Baseball Star Game</p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/arcade_games.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Arcade Games</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn4" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop4" class="minus-container mov-hidden">
+                        <a href="/dropdown/FRUIT DART-game">
+                            <img class="minus-con-img" src="/icons/game_icon_41.png" alt="">
+                            <p class="minus-con-text">Fruit Dart</p>
+                        </a>
+                        <a href="/dropdown/FRUIT CHOP">
+                            <img class="minus-con-img" src="/icons/game_icon_42.png" alt="">
+                            <p class="minus-con-text">Fruit Chop</p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/casual_games.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Casual Games</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn5" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop5" class="minus-container mov-hidden">
+                        <a href="/dropdown/Carrom">
+                            <img class="minus-con-img" src="/icons/game_icon_51.png" alt="">
+                            <p class="minus-con-text">Carrom</p>
+                        </a>
+                        <a href="/dropdown/pool-game">
+                            <img class="minus-con-img" src="/icons/game_icon_52.png" alt="">
+                            <p class="minus-con-text">Pool</p>
+                        </a>
+                        <a href="/dropdown/Ludo">
+                            <img class="minus-con-img" src="/icons/game_icon_53.png" alt="">
+                            <p class="minus-con-text">Ludo</p>
+                        </a>
+                        <a href="/dropdown/RUNNER NO.1">
+                            <img class="minus-con-img" src="/icons/game_icon_54.png" alt="">
+                            <p class="minus-con-text">Runner No. 1</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/puzzle_games.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Puzzle Games</p>
+                            </div>
+                        </div>
+                        <div id="mobile-btn6" class="mobile-right mobile-add-img plus">
+
+                        </div>
+                    </div>
+                    <div id="drop6" class="minus-container mov-hidden">
+                        <a href="/dropdown/bubble-shooter">
+                            <img class="minus-con-img" src="/icons/game_icon_61.png" alt="">
+                            <p class="minus-con-text">Bubble</p>
+                        </a>
+                        <a href="/dropdown/build-up-game">
+                            <img class="minus-con-img" src="/icons/game_icon_62.png" alt="">
+                            <p class="minus-con-text">Build Up</p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/fantasy_games_icon.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">MPL Esports</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/fantasy_games_icon.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">MPL Esports</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/about-us.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">About Us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/blog.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Blog</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/contact-us.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">FAQ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-area">
+                    <div class="mobile-nav-card">
+                        <div class="mobile-left">
+                            <div class="sports-logo">
+                                <img src="/icons/help.png" alt="">
+                            </div>
+                            <div class="sports-text">
+                                <p class="mobile-nav-text">Help</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="drop-con hidden">
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/fantasy_games_icon.png" alt="">
+                    <h4 class="nav-h4">Fantasy Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/fantasy_cricket">
+                        <p>Fantasy Cricket</p>
+                    </a>
+                    <a href="/dropdown/football">
+                        <p>Fantasy football</p>
+                    </a>
+                    <a href="/dropdown/basketball">
+                        <p>Fantasy basketball</p>
+                    </a>
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/sports_games_icon.png" alt="">
+                    <h4 class="nav-h4">Sports Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/wcc2">
+                        <p>Wcc2</p>
+                    </a>
+                    <a href="/dropdown/baseballstars-game">
+                        <p>Baseball Star Game</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/arcade_games_desktop.png" alt="">
+                    <h4 class="nav-h4">Arcade Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/FRUIT CHOP">
+                        <p>Fruit Chop</p>
+                    </a>
+                    <a href="/dropdown/FRUIT DART-game">
+                        <p>Fruit Dart</p>
+                    </a>
+                    <a href="/dropdown/FRUIT SLICE">
+                        <p>Fruit Slice</p>
+                    </a>
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/puzzle_games_desktop.png" alt="">
+                    <h4 class="nav-h4">Puzzle Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/bubble-shooter">
+                        <p>Bubble Shooter</p>
+                    </a>
+                    <a href="/dropdown/build-up-game">
+                        <p>Build up</p>
+                    </a>
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/card_games_desktop.png" alt="">
+                    <h4 class="nav-h4">Card Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/rummy">
+                        <p>Rummy</p>
+                    </a>
+                    <a href="/dropdown/Poker">
+                        <p>Poker</p>
+                    </a>
+                    <a href="/dropdown/call break">
+                        <p>Call Break</p>
+                    </a>
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/casual_games_desktop.png" alt="">
+                    <h4 class="nav-h4">Casual Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/Carrom">
+                        <p>Carrom</p>
+                    </a>
+                    <a href="/dropdown/pool-game">
+                        <p>Pool</p>
+                    </a>
+                    <a href="/dropdown/Ludo">
+                        <p>Ludo</p>
+                    </a>
+                    <a href="/dropdown/RUNNER NO.1">
+                        <p>Runner No. 1</p>
+                    </a>
+                    <a href="/dropdown/MONSTER TRUCK-game">
+                        <p>Monster Truck</p>
+                    </a>
+                    <a href="#">
+                        <p>Go Ride</p>
+                    </a>
+                </div>
+            </div>
+            <div class="drop-box">
+                <div class="nav-sec1">
+                    <img src="/icons/brain_games_desktop.png" alt="">
+                    <h4 class="nav-h4">Brain Game</h4>
+                </div>
+                <div class="sec1-a">
+                    <a href="/dropdown/sudoku">
+                        <p>Sudoku</p>
+                    </a>
+                    <a href="/dropdown/chess">
+                        <p>Speed Chess</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="body-sec">
+        <div id="banner">
+            <div class="banner-text">
+                <% if(data.name == "baseballstars-game" || data.name == "sudoku" || data.name == "rummy" || data.name == "poker" || data.name == "callbreak"){ %>
+                    <h1><span id="html-asyn"><%=data.banner.heading%></span></h1>
+                    <div>
+                        <span class="html-asyn2"><%=data.banner.subheading%></span>
+                    </div>
+                    <% } else { %>
+                        <h1><span id="html-text"><%=data.banner.heading%></span></h1>
+                        <div>
+                            <span class="html-text2"><%=data.banner.subheading%></span>
+                        </div>
+                        <% } %>
+            </div>
+            <div id="banner-inp">
+                <input type="number" name="num" id="num" placeholder="Enter mobile number" />
+                <button>Get SMS with Download link</button>
+
+            </div>
+        </div>
+        <div class="body-sec2">
+            <div class="about-topgame">
+                <h1>
+                    <%=data.about.heading%>
+                </h1>
+                <p class="about-text">
+                    <span><%=data.about.p1%></span>
+                </p>
+                <p class="about-text">
+                    <span><%=data.about.p2%></span>
+                </p>
+            </div>
+
+            <div class="about-topgame features">
+                <h1>
+                    <%=data.features.heading%>
+                </h1>
+                <p class="about-text">
+                    <span><%=data.features.p1%></span>
+                </p>
+                <p class="about-text">
+                    <span><%=data.features.p2%></span>
+                </p>
+                <div class="row-data">
+                    <div class="icon-css">
+                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-size">
+                    <path d="M3.1004 0.199997L0.400391 5.79999L0.850397 6.20004H4.00041V9.8H4.90043L7.60039 4.24437L7.26756 3.80001H4.00041V0.199997H3.1004Z" fill="#E91051" class="jsx-2893044709"></path>
+                </svg>
+                    </div>
+                    <div class="text__area">
+                        <p class="bottom-text"><span class="html-content">
+                        <span style="color:#190A28;"><%=data.features.sub_h1.h3%></span>
+                            <%=data.features.sub_h1.body%>
+                                </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row-data">
+                    <div class="icon-css">
+                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-size">
+                    <path d="M3.1004 0.199997L0.400391 5.79999L0.850397 6.20004H4.00041V9.8H4.90043L7.60039 4.24437L7.26756 3.80001H4.00041V0.199997H3.1004Z" fill="#E91051" class="jsx-2893044709"></path>
+                </svg>
+                    </div>
+                    <div class="text__area">
+                        <p class="bottom-text"><span class="html-content">
+                        <span style="color:#190A28;"><%=data.features.sub_h2.h3%></span>
+                            <%=data.features.sub_h2.body%>
+                                </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row-data">
+                    <div class="icon-css">
+                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-size">
+                    <path d="M3.1004 0.199997L0.400391 5.79999L0.850397 6.20004H4.00041V9.8H4.90043L7.60039 4.24437L7.26756 3.80001H4.00041V0.199997H3.1004Z" fill="#E91051" class="jsx-2893044709"></path>
+                </svg>
+                    </div>
+                    <div class="text__area">
+                        <p class="bottom-text"><span class="html-content">
+                        <span style="color:#190A28;"><%=data.features.sub_h3.h3%></span>
+                            <%=data.features.sub_h3.body%>
+                                </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row-data">
+                    <div class="icon-css">
+                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-size">
+                    <path d="M3.1004 0.199997L0.400391 5.79999L0.850397 6.20004H4.00041V9.8H4.90043L7.60039 4.24437L7.26756 3.80001H4.00041V0.199997H3.1004Z" fill="#E91051" class="jsx-2893044709"></path>
+                </svg>
+                    </div>
+                    <div class="text__area">
+                        <p class="bottom-text"><span class="html-content">
+                        <span style="color:#190A28;"><%=data.features.sub_h4.h3%></span>
+                            <%=data.features.sub_h4.body%>
+                                </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-topgame how_download">
+                <h1>
+                    <%=data.how_download.heading%>
+                </h1>
+                <p class="about-text">
+                    <span><%=data.how_download.p1%></span>
+                </p>
+                <% if(data.how_download.steps.length > 0){ %>
+                    <% data.how_download.steps.forEach(function(step){ %>
+                        <div class="row-data">
+                            <div class="icon-css">
+                                <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-size">
+                            <path d="M3.1004 0.199997L0.400391 5.79999L0.850397 6.20004H4.00041V9.8H4.90043L7.60039 4.24437L7.26756 3.80001H4.00041V0.199997H3.1004Z" fill="#E91051" class="jsx-2893044709"></path>
+                        </svg>
+                            </div>
+                            <div class="text__area">
+                                <p class="bottom-text"><span class="html-content">
+                                <%=step%>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <%  }); %>
+                            <% } %>
+            </div>
+
+            <div class="about-topgame how_play">
+                <h1>
+                    <%=data.how_play.heading%>
+                </h1>
+                <div class="play-para">
+                    <% if(data.how_play.parargaph.length > 0){ %>
+                        <% data.how_play.parargaph.forEach(function(pr){ %>
+                            <p class="about-text">
+                                <span><%=pr%></span>
+                            </p>
+                            <%  }); %>
+                                <% } %>
+                </div>
+                <% data.how_play.modes.forEach(function(step){ %>
+                    <div class="game-play">
+                        <h3 id="play-h3">
+                            <%=step.m_heading%>
+                        </h3>
+                        <img class="play-img" src="<%=step.img_url%>" alt="" srcset="">
+                        <div class="play-ans">
+                            <% step.m_paragraph.forEach(function(prr){ %>
+                                <p>
+                                    <%=prr%>
+                                </p>
+                                <%  }); %>
+                        </div>
+                    </div>
+                    <%  }); %>
+            </div>
+
+        </div>
+        <div class="about-topgame tips_to_play">
+            <h1>
+                <%=data.tips_to_play.heading%>
+            </h1>
+
+            <% if(data.tips_to_play.paragraph.length > 0){ %>
+                <% data.tips_to_play.paragraph.forEach(function(step){ %>
+                    <div class="row-data">
+                        <div class="icon-css">
+                            <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-size">
+                            <path d="M3.1004 0.199997L0.400391 5.79999L0.850397 6.20004H4.00041V9.8H4.90043L7.60039 4.24437L7.26756 3.80001H4.00041V0.199997H3.1004Z" fill="#E91051" class="jsx-2893044709"></path>
+                        </svg>
+                        </div>
+                        <div class="text__area">
+                            <p class="bottom-text"><span class="html-content">
+                                <%=step%>
+                                    </span>
+                            </p>
+                        </div>
+                    </div>
+                    <%  }); %>
+                        <% } %>
+        </div>
+        <div class="about-topgame why_play">
+            <h1>
+                <%=data.why_play.heading%>
+            </h1>
+
+            <% if(data.why_play.steps.length > 0){ %>
+                <% data.why_play.steps.forEach(function(step){ %>
+                    <div class="row-data">
+                        <div class="icon-css">
+                            <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-size">
+                            <path d="M3.1004 0.199997L0.400391 5.79999L0.850397 6.20004H4.00041V9.8H4.90043L7.60039 4.24437L7.26756 3.80001H4.00041V0.199997H3.1004Z" fill="#E91051" class="jsx-2893044709"></path>
+                        </svg>
+                        </div>
+                        <div class="text__area">
+                            <p class="bottom-text"><span class="html-content">
+                                <%=step%>
+                                    </span>
+                            </p>
+                        </div>
+                    </div>
+                    <%  }); %>
+                        <% } %>
+        </div>
+        <div class="about-topgame FAQs">
+            <h1>FAQs</h1>
+            <% if(data.FAQs.question.length > 0){ %>
+                <% for(var i=0; i < data.FAQs.question.length; i++) { %>
+                    <div class="game-faqs">
+                        <div class="page-ques">
+                            <h3>
+                                <%=data.FAQs.question[i]%>
+                            </h3>
+                            <div class="arrow-icon faq-down-arrow"></div>
+                        </div>
+                        <div class="page-ans hidden">
+                            <p>
+                                <%=data.FAQs.answer[i]%>
+                            </p>
+                        </div>
+                    </div>
+                    <%  }; %>
+                        <% } %>
+        </div>
+
+        <!-- Best-In-Class Gaming Experience -->
+        <div id="experience">
+            <div id="exp-head">
+                <h2>Best-In-Class Gaming Experience</h2>
+            </div>
+            <div id="exp-body">
+                <div id="exp-subody">
+                    <div class="e-subbody-con">
+                        <a class="exp-atag" href="#">
+                            <img src="https://www.mpl.live/static/trust-icons/user_icon.png" alt="">
+                            <p class="exp-title">6 Crore+</p>
+                            <p class="exp-details">Users</p>
+                        </a>
+                    </div>
+                    <div class="e-subbody-con">
+                        <img src="https://www.mpl.live/static/trust-icons/secure_icon.png" alt="">
+                        <p class="exp-title">100% Secure</p>
+                        <p class="exp-details">& Legal</p>
+                    </div>
+                    <div class="e-subbody-con">
+                        <img src="https://www.mpl.live/static/trust-icons/support_icon.png" alt="">
+                        <p class="exp-title">24 x 7</p>
+                        <p class="exp-details">Customer Support</p>
+                    </div>
+                    <div class="e-subbody-con">
+                        <img src="https://www.mpl.live/static/trust-icons/cashback_icon.png" alt="">
+                        <p class="exp-title">Cashback</p>
+                        <p class="exp-details">Offers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proud Sponsor Of -->
+        <div id="Sponsor">
+            <div id="blank"></div>
+            <div id="sponsor-head">
+                <h2>Proud Sponsor Of</h2>
+            </div>
+            <div id="sponsor-logo">
+                <img src="https://www.mpl.live/static/sponsors/rcb_logo.png" alt="">
+                <img src="https://www.mpl.live/static/sponsors/kkr_logo.png" alt="">
+            </div>
+        </div>
+        <!-- MPL Is a Member of -->
+        <div id="member">
+            <div id="mem-container">
+                <div id="mem-head">
+                    <h2>MPL Is A Member Of</h2>
+                </div>
+                <div id="mem-body">
+                    <div class="mem-logo">
+                        <img src="https://www.mpl.live/static/trust-icons/aigf.png" alt="">
+                    </div>
+                    <div class="mem-logo">
+                        <img src="https://www.mpl.live/static/trust-icons/ficci.png" alt="">
+                    </div>
+                    <div class="mem-logo">
+                        <img src="https://www.mpl.live/cledge.mpl.live/pb/website/static/53722d97ef034e6fbf46ee1360d30442.png" alt="">
+                    </div>
+                    <div class="mem-logo">
+                        <img src="https://www.mpl.live/static/trust-icons/IAMAI.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Know Us Better -->
+        <div id="social">
+            <div id="social-head">
+                <h4>Know Us Better</h4>
+            </div>
+            <div id="social-container">
+                <div id="social-links">
+                    <div class="link-logo">
+                        <a href="https://www.facebook.com/plaympl/" target="blank">
+                            <img src="https://www.mpl.live/static/social_icons/fb.png" alt="">
+                        </a>
+                    </div>
+                    <div class="link-logo">
+                        <a href="https://www.instagram.com/plaympl/" target="blank">
+                            <img src="https://www.mpl.live/static/social_icons/ig.png" alt="">
+                        </a>
+                    </div>
+                    <div class="link-logo">
+                        <a href="https://twitter.com/PlayMPL" target="blank">
+                            <img src="https://www.mpl.live/static/social_icons/tw.png" alt="">
+                        </a>
+                    </div>
+                    <div class="link-logo">
+                        <a href="https://www.youtube.com/channel/UCIBT5MyVgwAvcZZa1e8O-sw" target="blank">
+                            <img src="https://www.mpl.live/static/social_icons/yt.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div id="maindiv">
+            <div id="subdiv">
+                <div class="borderline-top"></div>
+                <div id="footer-list">
+                    <div id="list-one">
+                        <div id="list-one-top" class="list-details">
+                            <h4>Fantasy game</h4>
+                            <a href="">Fantasy cricket</a>
+                            <a href="">Fantasy football</a>
+                            <a href="">Fantasy basketball</a>
+                        </div>
+                        <div id="list-one-bottom" class="list-details">
+                            <h4>Card Games</h4>
+                            <a href="">Rummy</a>
+                            <a href="">Poker</a>
+                            <a href="">Call Break</a>
+                        </div>
+                    </div>
+                    <div id="list-two">
+                        <div id="list-two-top" class="list-details">
+                            <h4>Arcade Games</h4>
+                            <a href="">Fruit Chop</a>
+                            <a href="">Fruit Dart</a>
+                            <a href="">Fruit Slice</a>
+                        </div>
+                        <div id="list-two-bottom" class="list-details">
+                            <h4>Brain Games</h4>
+                            <a href="">Sudoku</a>
+                            <a href="">Speed Chess</a>
+                        </div>
+                    </div>
+                    <div id="list-three">
+                        <div id="list-three-top" class="list-details">
+                            <h4>Sports Games</h4>
+                            <a href="">Wcc2</a>
+                            <a href="">Baseball Star Game</a>
+                        </div>
+                        <div id="list-three-bottom" class="list-details">
+                            <h4>Puzzle Games</h4>
+                            <a href="">Bubble Shooter</a>
+                            <a href="">Build Up</a>
+                        </div>
+                    </div>
+                    <div id="list-four">
+                        <div id="list-four-top" class="list-details">
+                            <h4>Casual Games</h4>
+                            <a href="">Carrom</a>
+                            <a href="">Pool</a>
+                            <a href="">Ludo</a>
+                            <a href="">Runner No.1</a>
+                            <a href="">Monster Truck</a>
+                            <a href="">Go Ride</a>
+                        </div>
+                    </div>
+                    <div id="list-five">
+                        <div id="list-five-top" class="last-list-details">
+                            <a href="">FAQ</a>
+                            <a href="">More Games</a>
+                            <a href="">College Premiere League</a>
+                            <a href="">Blog</a>
+                            <a href="">Refer and Earn</a>
+                            <a href="">Games of skill</a>
+                        </div>
+                        <div id="last-social-links">
+                            <div id="social-link-icons">
+                                <a href="https://www.facebook.com/PlayMPL/">
+                                    <img src="https://www.mpl.live/static/footer/facebook_icon.png" alt="">
+                                </a>
+                                <a href="https://www.instagram.com/plaympl/">
+                                    <img src="https://www.mpl.live/static/footer/instagram_icon.png" alt="">
+                                </a>
+                                <a href="https://twitter.com/PlayMPL">
+                                    <img src="https://www.mpl.live/static/footer/twitter_icon.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="borderline-bottom"></div>
+                <div id="copy-right-tag">
+                    <div id="tag-left-side">Copyright © - Galactus Funware Technology Private Limited | All rights reserved</div>
+                    <div id="tag-right-side">
+                        <a href="#"> Privacy Policy <span id="vertical-line"> | </span></a>
+                        <a href=""> MPL Fairplay <span id="vertical-line"> | </span></a>
+                        <a href=""> Terms & Condition </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="disclamer-div">
+            <div id="disclamer-cotent">
+                <div id="content-head">
+                    <h4>DISCLAIMER</h4>
+                </div>
+                <div id="content-body">
+                    <p>Galactus Funware is the owner of, and reserves all rights to the assets, content, services, information, and products and graphics in the website except any third party content.</p>
+                    <p>Galactus Funware refuses to acknowledge or represent about the accuracy or completeness or reliability or adequacy of the website's third party content. These content, materials, information, services, and products in this website,
+                        including text, graphics, and links, are provided "AS IS" and without warranties of any kind, whether expressed or implied.</p>
+                    <p>*MPL is the biggest gaming app in India based on the number of unity games, special tournaments and formats. MPL is available only to people above 18 years of age. MPL is available in all states where permissible by extant law. Consequently,
+                        users located in some states may not be able to access our App or its contests. For an updated list of such states, please download the App</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <%- include('../partials/educationalOnly') %>
+
+</body>
+
+<script src="/scripts/pages.js"></script>
+
+</html>
