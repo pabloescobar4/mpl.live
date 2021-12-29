@@ -48,7 +48,7 @@
             </p>
           </div>
           <!-- <% let url = `${highlighted[0].urlToImage}` %> -->
-          <div style="background-image: url(<%= `${highlighted[0].urlToImage}` %>)"></div>
+          <div style="background-image: url('<%= `${highlighted[0].urlToImage}` %>')"></div>
         </div>
         <div>
           <% for(let i=1 ; i < 4 ; i++) { %>
@@ -62,7 +62,7 @@
               </p>
             </div>
             <!-- <% let url = `${highlighted[0].urlToImage}` %> -->
-            <div style="background-image: url(<%= `${highlighted[i].urlToImage}` %>)"></div>
+            <div style="background-image: url('<%= `${highlighted[i].urlToImage}` %>')"></div>
           </div>
           <% } %>
         </div>
@@ -126,7 +126,7 @@
             <% digitalGames.forEach(({urlToImage, title, category, _id})=> { %>
 
             <div onclick="window.location.href='<%= `news/${_id}` %>' ">
-              <div style='background-image: url(<%= `${urlToImage}` %>)'>
+              <div style='background-image: url('<%= `${urlToImage}` %>')'>
                 <span>
                   <%= category[0] %>
                 </span>
@@ -142,7 +142,7 @@
         <section id="popular_trends">
           <span class="header">POPULAR TRENDS</span>
           <div onclick="window.location.href='<%= `news/${popularTrends[0]._id}` %>' ">
-            <div style="background-image: url(<%= `${popularTrends[0].urlToImage}` %>)">
+            <div style="background-image: url('<%= `${popularTrends[i].urlToImage}` %>')">
               <span>
                 <%= popularTrends[0].category[0] %>
               </span>
@@ -162,7 +162,7 @@
           <div>
             <% for(let i=1; i < 3 ; i++) { %>
             <div onclick="window.location.href='<%= `news/${popularTrends[i]._id}` %>' ">
-              <div style="background-image: url(<%= `${popularTrends[i].urlToImage}` %>)">
+              <div style="background-image: url('<%= `${popularTrends[i].urlToImage}` %>')">
                 <span>
                   <%= popularTrends[i].category[0] %>
                 </span>
